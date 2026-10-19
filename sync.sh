@@ -39,4 +39,4 @@ if grep -rEln "(ck|cs)_[a-f0-9]{20,}" --exclude-dir=.git . || find . -path ./.gi
 
 git add -A
 if git diff --cached --quiet; then echo "Scripts: nothing new."; else git commit -q -m "Sync scripts $(date +%F)"; echo "Scripts: committed."; fi
-[[ "${NO_PUSH:-}" == 1 ]] || git push -q
+[[ "${NO_PUSH:-}" == 1 ]] || git push -q -u origin main
