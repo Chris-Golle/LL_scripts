@@ -6,4 +6,4 @@ One-off and maintenance scripts for lullberry.com.
 - `root/` : CSS audit / PurgeCSS tooling and ACF import helpers
 
 Not included: `local.sql` (full DB dump), media files, query output dumps.
-Print-sheet builders live in the `lullberry` repo under `print-sheets/source`.
+- `print-sheets/` : Python builders for the printable series PDFs
