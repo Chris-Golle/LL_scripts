@@ -6,7 +6,7 @@ url = "https://www.staging2.lullberry.com/wp-json/acf/v3/tags/357?fields[acf_des
 
 payload  = {}
 headers = {
-  'Authorization': 'Basic YWNmOnFoI2dla3hSdDZ6bFBZR0d0QFlCWmNwOA=='
+  'Authorization': 'BasicXXXXXX'
 }
 
 response = requests.request("PUT", url, headers=headers, data = payload)
@@ -20,7 +20,7 @@ print(response.text.encode('utf8'))
 
 # payload  = {}
 # headers = {
-#   'Authorization': 'Basic YWNmOnFoI2dla3hSdDZ6bFBZR0d0QFlCWmNwOA=='
+#   'Authorization': 'BasicXXXXXX'
 # }
 
 # response = requests.request("PUT", url, headers=headers, data = payload)
