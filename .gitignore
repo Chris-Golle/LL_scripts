@@ -1,4 +1,6 @@
 .DS_Store
+Icon?
 node_modules/
 *.log
 *_result.txt
+__pycache__/

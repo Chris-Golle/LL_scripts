@@ -1,10 +1,14 @@
 # Lullberry scripts
 
-One-off and maintenance scripts for lullberry.com.
+All Lullberry scripts in one place. Run `~/Documents/Lullberry/push-all.sh` to gather, commit and push.
 
-- `sql/` : SQL and PHP fix scripts, run with `mysql -u root -proot local < file.sql`
-- `root/` : CSS audit / PurgeCSS tooling and ACF import helpers
+| Folder | What | Source on disk |
+|---|---|---|
+| `wordpress/sql` | DB fix and query scripts: `mysql -u root -proot local < file.sql` | `Lullberry/app/sql` |
+| `wordpress/php` | One-off WP helpers (menus, legal page, ACF import) | `Lullberry/app/sql`, `Lullberry/` |
+| `css-audit` | PurgeCSS / CSS coverage tooling (`npm i` then `node css-coverage-audit.js`) | `Lullberry/` |
+| `woocommerce` | REST API scripts for products and categories. Needs `WC_CONSUMER_KEY`, `WC_CONSUMER_SECRET` | `Drive/LL Prod 1 - Strengths/Scripts/woo` |
+| `illustrator` | Adobe Illustrator ExtendScripts (ribbons, swatches, export) | `Drive/LL design/Adobe scripts` |
+| `print-sheets` | Python builders for printable series PDFs | `Lullberry/print-sheets/source` |
 
-Not included: `local.sql` (full DB dump), media files, query output dumps.
-- `print-sheets/` : Python builders for the printable series PDFs
-- `woo/` : WooCommerce REST API scripts (products, categories, ACF). Set `WC_CONSUMER_KEY` and `WC_CONSUMER_SECRET` in your shell before running.
+Edit scripts where they live (source column); `sync.sh` copies them here. Excluded: `local.sql`, `to_delete/` folders, secrets.
